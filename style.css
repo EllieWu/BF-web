@@ -103,6 +103,11 @@ body .container .nav .nav-menu {
 body .container .nav .nav-menu a {
   text-decoration: none;
   color: white;
+  padding: 10px 20px;
+}
+body .container .nav .nav-menu a:hover {
+  background: linear-gradient(to bottom left, #487081, #83c1a6);
+  border-radius: 20px;
 }
 body .container .nav .nav-menu a h1 {
   font-size: 20px;
@@ -140,6 +145,9 @@ body .container .rwd-nav-sign button {
   border-radius: 20px;
   border: 0px;
   padding: 10px 50px;
+}
+body .container .rwd-nav-sign button:hover {
+  background: linear-gradient(to bottom left, #487081, #83c1a6);
 }
 @media (min-width: 768px) {
   body .container .rwd-nav-sign {
@@ -179,4 +187,8 @@ body .body-content .body-login-box .body-login .login {
   width: 189px;
   background: linear-gradient(to bottom left, #487081, #83c1a6);
   cursor: pointer;
+}
+body .body-content .body-login-box .body-login .login:hover {
+  background: #365f71;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
