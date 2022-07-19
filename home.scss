@@ -49,11 +49,29 @@ table {
 img{
     vertical-align: middle;
 }
+@mixin 1200{
+    @media (max-width:1200px){
+        @content;
+    }
+}
 body{
     .container{
     width: 1200px;
     margin: 0 auto;
     .nav{
+        @include 1200{
+            ul{
+                display: none;
+                }
+                label{
+                display: block;
+                }
+                #burger:checked + ul{
+                display:block;
+                }
+        }
+        
+           }
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
