@@ -86,7 +86,7 @@ body .banner .m-img img {
     display: none;
   }
 }
-body .banner .banner-img {
+body .banner .banner-img img {
   position: relative;
   background-size: cover;
   height: 100%;
@@ -95,7 +95,7 @@ body .banner .banner-img {
   overflow: hidden;
 }
 @media (max-width: 391px) {
-  body .banner .banner-img {
+  body .banner .banner-img img {
     display: none;
   }
 }
