@@ -69,13 +69,13 @@ img{
         @content;
     }
 }
-@mixin mobile375{
-    @media(max-width: 375px){
+@mixin mobile390{
+    @media(max-width: 390px){
         @content;
     }
 }
-@mixin m375{
-    @media(min-width: 375px){
+@mixin m390{
+    @media(min-width: 390px){
         @content;
     }
 }
@@ -97,7 +97,7 @@ body{
         margin: 0 auto;
         .nav-img{
             width: 180px;
-            @include mobile375{
+            @include mobile390{
                 width: 114px;
             }
         }
@@ -116,7 +116,7 @@ body{
         .m-img img{
             max-width: 100%;
             background-color: #ccd1f6;
-            @include m375{
+            @include m390{
                 display: none;
             }
         }
@@ -128,7 +128,7 @@ body{
             background-attachment: fixed;
             max-width: 100%;
             overflow: hidden;
-            @include mobile375{
+            @include mobile390{
                 display: none;
             }
             // @include w1200{
