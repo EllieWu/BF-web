@@ -77,4 +77,5 @@ body .banner .banner-img {
   position: relative;
   background-size: cover;
   height: 100%;
+  overflow: hidden;
 }/*# sourceMappingURL=home.css.map */
