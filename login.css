@@ -141,6 +141,11 @@ body .body-login-box .body-login {
     padding: 15px 10px;
   }
 }
+@media (max-width: 391px) {
+  body .body-login-box .body-login {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+}
 body .body-login-box .body-login .rwd-nav-sign {
   margin-top: 20px;
   display: flex;
@@ -157,6 +162,11 @@ body .body-login-box .body-login .rwd-nav-sign button {
   padding: 8px 21px;
   background-color: transparent;
   color: antiquewhite;
+}
+@media (max-width: 391px) {
+  body .body-login-box .body-login .rwd-nav-sign button {
+    color: black;
+  }
 }
 body .body-login-box .body-login .rwd-nav-sign button:hover {
   background: linear-gradient(to bottom left, #487081, #83c1a6);
