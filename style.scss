@@ -86,7 +86,7 @@ body{
     
     // }
     .container{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     @include desktop-992{
         width: 800px;

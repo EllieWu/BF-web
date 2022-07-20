@@ -49,85 +49,92 @@ table {
 img{
     vertical-align: middle;
 }
-@mixin 1200{
+@mixin w1200{
     @media (max-width:1200px){
         @content;
     }
 }
+@mixin web992{
+    @media (max-width:992px){
+        @content;
+    }
+}
+@mixin web992-2{
+    @media (min-width:992px){
+        @content;
+    }
+}
+@mixin pad768{
+    @media(max-width:768px){
+        @content;
+    }
+}
+@mixin mobile375{
+    @media(max-width: 375px){
+        @content;
+    }
+}
 body{
+    // background-image: url("https://digitallearning.arizona.edu/sites/default/files/styles/uaqs_full_width_lg/public/RethinkingYourAssessments.jpg?itok=fYZ_ZKRP&timestamp=1599151705");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-color: rgba(0, 0, 0, 0.4);
+    // background-position: center center;
+    // background-blend-mode: multiply;
+    // height: 100vh;
     .container{
-    width: 1200px;
-    margin: 0 auto;
-    .nav{
-        @include 1200{
-            ul{
-                display: none;
-                }
-                label{
-                display: block;
-                }
-                #burger:checked + ul{
-                display:block;
-                }
+        max-width: 1200px;
+        margin: 0 auto;
+        .nav-img{
+            width: 180px;
+            @include mobile375{
+                width: 114px;
+            }
         }
         
-           }
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-        .menu-box{
-            display: flex;
-        }
-        .drop-down-menu{
-            display: flex;
-            align-items: flex-end;
-            ul{
-                margin: 0;
-                padding: 0;
-                list-style: none;
-            }
-            li{
-                padding: 10px;
-                font-size: 16px;
-                a{
-                    text-decoration: none;
-                    color: #000;
-                    font-weight: bold;
-                }
-            } 
-        }
-        .menu-logout{
-            display: flex;
-            align-items: flex-end;
-            li{
-                padding: 10px;
-                font-size: 16px;
-            }
-            li a{
-                text-decoration: none;
-                color: #000;
-                font-weight: bold;
-            }
+    }
+    .menu-logout{
+        @include w1200{
+            display: none;
         }
     }
     .banner{
         .banner-img{
-            width: 1200px;
-            height: 508px;
-            background-size:cover;
             position: relative;
+            background-size: cover;
+            height: 100%;
         }
-        h1{
-            font-size: 50px;
-            position:absolute;
-            top:321px;
-            font-weight: bold;
-            font-style: italic;
-            right: 509px;
-            color:white;
-        }
+        // .banner-img{
+        //     width: 1200px;
+        //     height: 508px;
+        //     background-size:cover;
+        //     position: relative;
+        //     padding: 0 20px;
+            
+        //     @include web992{
+        //         width: 960px;
+        //     }
+        //     @include pad768{
+        //         padding: 0 8px;
+        //         width: 736px;
+        //     }
+        //     @include mobile375{
+        //         width: 351px;
+        //     }
+        // }
+        // h1{
+        //     font-size: 50px;
+        //     position:absolute;
+        //     top:321px;
+        //     font-weight: bold;
+        //     font-style: italic;
+        //     right: 163px;
+        //     color:white;
+        //     @include pad768{
+        //         right: 50px;
+        //     }
+        // }
     }
 }
-    
-}
+
+

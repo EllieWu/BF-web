@@ -57,67 +57,24 @@ img {
 }
 
 body .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
-body .container .nav {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+body .container .nav-img {
+  width: 180px;
 }
-body .container .nav .burger {
-  display: none;
+@media (max-width: 375px) {
+  body .container .nav-img {
+    width: 114px;
+  }
 }
-body .container .nav #burger:checked + ul {
-  display: block;
+@media (max-width: 1200px) {
+  body .menu-logout {
+    display: none;
+  }
 }
-body .container .nav .menu-box {
-  display: flex;
-}
-body .container .nav .drop-down-menu {
-  display: flex;
-  align-items: flex-end;
-}
-body .container .nav .drop-down-menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-body .container .nav .drop-down-menu li {
-  padding: 10px;
-  font-size: 16px;
-}
-body .container .nav .drop-down-menu li a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
-body .container .nav .menu-logout {
-  display: flex;
-  align-items: flex-end;
-}
-body .container .nav .menu-logout li {
-  padding: 10px;
-  font-size: 16px;
-}
-body .container .nav .menu-logout li a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
-body .container .banner .banner-img {
-  width: 1200px;
-  height: 508px;
-  background-size: cover;
+body .banner .banner-img {
   position: relative;
-}
-body .container .banner h1 {
-  font-size: 50px;
-  position: absolute;
-  top: 321px;
-  font-weight: bold;
-  font-style: italic;
-  right: 509px;
-  color: white;
+  background-size: cover;
+  height: 100%;
 }/*# sourceMappingURL=home.css.map */

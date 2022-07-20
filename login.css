@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body .container .nav-img {
+  width: 180px;
+}
+@media (max-width: 375px) {
+  body .container .nav-img {
+    width: 114px;
+  }
+}
+body .container .link-c {
+  color: black !important;
+  font-weight: bold !important;
+}
+@media (max-width: 1200px) {
+  body .menu-logout {
+    display: none;
+  }
+}
+body .banner .m-img {
+  max-width: 100%;
+  background-color: #ccd1f6;
+}
+@media (min-width: 375px) {
+  body .banner .m-img {
+    display: none;
+  }
+}
+body .banner .banner-img {
+  position: relative;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  max-width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 375px) {
+  body .banner .banner-img {
+    display: none;
+  }
+}
+body .body-login-box {
+  position: absolute;
+  align-items: center;
+  top: 205px;
+  margin-left: 393px;
+}
+@media (max-width: 1200px) {
+  body .body-login-box {
+    top: 113px;
+    justify-content: flex-start;
+    margin-left: 83px;
+  }
+}
+@media (max-width: 992px) {
+  body .body-login-box {
+    top: 88px;
+  }
+}
+body .body-login-box .body-login {
+  background-color: rgba(137, 137, 137, 0.5);
+  border-radius: 10px;
+  text-align: center;
+  padding: 70px 0;
+  width: 313px;
+}
+@media (max-width: 1200px) {
+  body .body-login-box .body-login {
+    padding: 44px;
+  }
+}
+@media (max-width: 992px) {
+  body .body-login-box .body-login {
+    padding: 20px 10px;
+    width: 265px;
+  }
+}
+@media (max-width: 768px) {
+  body .body-login-box .body-login {
+    width: 215px;
+    padding: 15px 10px;
+  }
+}
+body .body-login-box .body-login .rwd-nav-sign {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  body .body-login-box .body-login .rwd-nav-sign {
+    margin-top: 0;
+  }
+}
+body .body-login-box .body-login .rwd-nav-sign button {
+  border-radius: 20px;
+  border: 1px solid #79b4a0;
+  padding: 8px 21px;
+  background-color: transparent;
+  color: antiquewhite;
+}
+body .body-login-box .body-login .rwd-nav-sign button:hover {
+  background: linear-gradient(to bottom left, #487081, #83c1a6);
+}
+@media (min-width: 1200px) {
+  body .body-login-box .body-login .rwd-nav-sign {
+    display: none;
+  }
+}
+body .body-login-box h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+@media (max-width: 992px) {
+  body .body-login-box h2 {
+    font-size: 20px;
+  }
+}
+body .body-login-box input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 1px solid #79b4a0;
+  text-align: center;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  body .body-login-box input {
+    padding: 3px 0;
+  }
+}
+body .body-login-box .login {
+  background-color: rgba(137, 137, 137, 0.5);
+  width: 216px;
+  background: linear-gradient(to bottom left, #487081, #83c1a6);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  body .body-login-box .login {
+    width: 196px;
+  }
+}
+body .body-login-box .login:hover {
+  background: #365f71;
+  color: white;
+}
+body .checkbox {
+  margin-right: 8px;
+}/*# sourceMappingURL=login.css.map */
