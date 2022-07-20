@@ -63,7 +63,7 @@ body .container {
 body .container .nav-img {
   width: 180px;
 }
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   body .container .nav-img {
     width: 114px;
   }

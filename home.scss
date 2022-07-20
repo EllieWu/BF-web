@@ -69,8 +69,8 @@ img{
         @content;
     }
 }
-@mixin mobile375{
-    @media(max-width: 375px){
+@mixin mobile390{
+    @media(max-width: 390px){
         @content;
     }
 }
@@ -87,7 +87,7 @@ body{
         margin: 0 auto;
         .nav-img{
             width: 180px;
-            @include mobile375{
+            @include mobile390{
                 width: 114px;
             }
         }
