@@ -77,12 +77,12 @@ body .container .link-c {
     display: none;
   }
 }
-body .banner .m-img {
+body .banner .m-img img {
   max-width: 100%;
   background-color: #ccd1f6;
 }
 @media (min-width: 375px) {
-  body .banner .m-img {
+  body .banner .m-img img {
     display: none;
   }
 }
