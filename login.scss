@@ -69,13 +69,13 @@ img{
         @content;
     }
 }
-@mixin mobile390{
-    @media(max-width: 390px){
+@mixin mobile391{
+    @media(max-width: 391px){
         @content;
     }
 }
-@mixin m390{
-    @media(min-width: 390px){
+@mixin m391{
+    @media(min-width: 391px){
         @content;
     }
 }
@@ -97,7 +97,7 @@ body{
         margin: 0 auto;
         .nav-img{
             width: 180px;
-            @include mobile390{
+            @include mobile391{
                 width: 114px;
             }
         }
@@ -116,7 +116,7 @@ body{
         .m-img img{
             max-width: 100%;
             background-color: #ccd1f6;
-            @include m390{
+            @include m391{
                 display: none;
             }
         }
@@ -128,15 +128,9 @@ body{
             background-attachment: fixed;
             max-width: 100%;
             overflow: hidden;
-            @include mobile390{
+            @include mobile391{
                 display: none;
             }
-            // @include w1200{
-            //     width: 1168px;
-            // }
-            // @include web992{
-            //     width: 960px;
-            // }
         }
     }
     .body-login-box{
