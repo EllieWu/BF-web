@@ -81,9 +81,9 @@ body{
                 display: none;
             }
         }
-        div.ef {
+        .ef {
             --bRadius: 10px;
-            div{
+            .div{
                 
                 position: relative;
                 text-align: center;
@@ -123,13 +123,14 @@ body{
         align-items: center;
         top: 205px;
         margin-left: 393px;
+        
             @include w1200{
             top:113px;
             justify-content: flex-start;
             margin-left: 83px;
         }
         @include web992{
-            top: 88px;
+            top: 99px;
         }
          .body-login{
             background-color:rgb(137 137 137 / 50%) ;
@@ -137,44 +138,64 @@ body{
             text-align: center;
             padding: 70px 0;
             width: 313px;
+            
             @include w1200{
-                padding: 44px;
+                padding: 5px 0px;
             } 
             @include web992{
-                padding: 20px 10px;
+                padding: 10px 10px;
                 width: 265px;
             }
             @include pad768{
                 width: 215px;
-                padding: 15px 10px;
+                padding: 9px 10px;
             }
             @include mobile391{
                 background-color:rgb(255 255 255 / 95%) ;
+                width: 200px;
+                
             }
-            .rwd-nav-sign{
-                margin-top: 20px;
-                 @include pad768{
-                    margin-top: 0;
+            p{
+                @include web992{
+                    font-size: 16px;
+                }
+                @include pad768{
+                    font-size: 12px;
+                }
+            }
+            a{
+                @include web992{
+                    width: 177px;
+                }
+            }
+        }
+        .rwd-nav-sign{
+            margin-top: 20px;
+             @include pad768{
+                margin-top: 0;
+             }
+            button{
+                // background-color: rgb(137 137 137 / 50%);
+                border-radius: 20px;
+                border: 1px solid #79b4a0;
+                padding: 8px 21px;
+                background-color: transparent;
+                color: antiquewhite;
+                font-size: 16px;
+                @include web992{
+                    font-size: 8px;
+                }
+                @include mobile391{
+                    color:black;
+                }
+                &:hover{
+                    background: linear-gradient(to bottom left, #487081, #83c1a6);
                  }
-                button{
-                    // background-color: rgb(137 137 137 / 50%);
-                    border-radius: 20px;
-                    border: 1px solid #79b4a0;
-                    padding: 8px 21px;
-                    background-color: transparent;
-                    color: antiquewhite;
-                    @include mobile391{
-                        color:black;
-                    }
-                    &:hover{
-                        background: linear-gradient(to bottom left, #487081, #83c1a6);
-                     }
-                }
-                display: flex;
-                justify-content: space-around;
-                @include sign-rwd-1200{
-                    display: none;
-                }
+            }
+            display: flex;
+            justify-content: space-around;
+            @include sign-rwd-1200{
+                display: none;
             }
         }
         
@@ -186,6 +207,9 @@ body{
                 @include web992{
                     font-size: 20px;
                 }
+                @include pad768{
+                    font-size: 16px;
+                }
             }
             input{
                 padding:10px;
@@ -194,8 +218,17 @@ body{
                 border: 1px solid #79b4a0;
                 text-align: center;
                 background-color: transparent;
+                font-size: 18px;
+                @include w1200{
+                    padding: 0;
+                }
+                @include web992{
+                    margin-bottom: 14px;
+                }
                 @include pad768{
                     padding: 3px 0;
+                    margin-bottom: 0;
+                    font-size: 12px;
                 }
             }
             .login{
@@ -204,7 +237,7 @@ body{
                 background: linear-gradient(to bottom left, #487081, #83c1a6);
                 cursor: pointer;
                 @include pad768{
-                    width: 196px;
+                    width: 133px;
                 }
                 &:hover{
                     background: #365f71;

@@ -41,17 +41,17 @@ body .banner .banner-img img {
     display: none;
   }
 }
-body .banner div.ef {
+body .banner .ef {
   --bRadius: 10px;
 }
-body .banner div.ef div {
+body .banner .ef .div {
   position: relative;
   text-align: center;
   font-size: 24px;
   border-radius: var(--bRadius);
   transition: all 0.3s;
 }
-body .banner div.ef div::before, body .banner div.ef div::after {
+body .banner .ef .div::before, body .banner .ef .div::after {
   content: "";
   position: absolute;
   top: -10px;
@@ -64,7 +64,7 @@ body .banner div.ef div::before, body .banner div.ef div::after {
   -webkit-animation: clippath 5s infinite linear;
           animation: clippath 5s infinite linear;
 }
-body .banner div.ef div::after {
+body .banner .ef .div::after {
   -webkit-animation: clippath 5s infinite -2.5s linear;
           animation: clippath 5s infinite -2.5s linear;
 }
@@ -119,7 +119,7 @@ body .body-login-box {
 }
 @media (max-width: 992px) {
   body .body-login-box {
-    top: 88px;
+    top: 99px;
   }
 }
 body .body-login-box .body-login {
@@ -131,53 +131,75 @@ body .body-login-box .body-login {
 }
 @media (max-width: 1200px) {
   body .body-login-box .body-login {
-    padding: 44px;
+    padding: 5px 0px;
   }
 }
 @media (max-width: 992px) {
   body .body-login-box .body-login {
-    padding: 20px 10px;
+    padding: 10px 10px;
     width: 265px;
   }
 }
 @media (max-width: 768px) {
   body .body-login-box .body-login {
     width: 215px;
-    padding: 15px 10px;
+    padding: 9px 10px;
   }
 }
 @media (max-width: 391px) {
   body .body-login-box .body-login {
     background-color: rgba(255, 255, 255, 0.95);
+    width: 200px;
   }
 }
-body .body-login-box .body-login .rwd-nav-sign {
+@media (max-width: 992px) {
+  body .body-login-box .body-login p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  body .body-login-box .body-login p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 992px) {
+  body .body-login-box .body-login a {
+    width: 177px;
+  }
+}
+body .body-login-box .rwd-nav-sign {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
 }
 @media (max-width: 768px) {
-  body .body-login-box .body-login .rwd-nav-sign {
+  body .body-login-box .rwd-nav-sign {
     margin-top: 0;
   }
 }
-body .body-login-box .body-login .rwd-nav-sign button {
+body .body-login-box .rwd-nav-sign button {
   border-radius: 20px;
   border: 1px solid #79b4a0;
   padding: 8px 21px;
   background-color: transparent;
   color: antiquewhite;
+  font-size: 16px;
+}
+@media (max-width: 992px) {
+  body .body-login-box .rwd-nav-sign button {
+    font-size: 8px;
+  }
 }
 @media (max-width: 391px) {
-  body .body-login-box .body-login .rwd-nav-sign button {
+  body .body-login-box .rwd-nav-sign button {
     color: black;
   }
 }
-body .body-login-box .body-login .rwd-nav-sign button:hover {
+body .body-login-box .rwd-nav-sign button:hover {
   background: linear-gradient(to bottom left, #487081, #83c1a6);
 }
 @media (min-width: 1200px) {
-  body .body-login-box .body-login .rwd-nav-sign {
+  body .body-login-box .rwd-nav-sign {
     display: none;
   }
 }
@@ -192,6 +214,11 @@ body .body-login-box h2 {
     font-size: 20px;
   }
 }
+@media (max-width: 768px) {
+  body .body-login-box h2 {
+    font-size: 16px;
+  }
+}
 body .body-login-box input {
   padding: 10px;
   margin-bottom: 20px;
@@ -199,10 +226,23 @@ body .body-login-box input {
   border: 1px solid #79b4a0;
   text-align: center;
   background-color: transparent;
+  font-size: 18px;
+}
+@media (max-width: 1200px) {
+  body .body-login-box input {
+    padding: 0;
+  }
+}
+@media (max-width: 992px) {
+  body .body-login-box input {
+    margin-bottom: 14px;
+  }
 }
 @media (max-width: 768px) {
   body .body-login-box input {
     padding: 3px 0;
+    margin-bottom: 0;
+    font-size: 12px;
   }
 }
 body .body-login-box .login {
@@ -213,7 +253,7 @@ body .body-login-box .login {
 }
 @media (max-width: 768px) {
   body .body-login-box .login {
-    width: 196px;
+    width: 133px;
   }
 }
 body .body-login-box .login:hover {
