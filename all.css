@@ -191,4 +191,68 @@ body .body-content .body-login-box .body-login .login {
 body .body-content .body-login-box .body-login .login:hover {
   background: #365f71;
   color: white;
+}
+body .body-content div.ef {
+  --bRadius: 10px;
+}
+body .body-content div.ef div {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  border-radius: var(--bRadius);
+  transition: all 0.3s;
+  background-color: rgb(224, 73, 73);
+}
+body .body-content div.ef div::before, body .body-content div.ef div::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: all 0.5s;
+  border-radius: var(--bRadius);
+  -webkit-animation: clippath 5s infinite linear;
+          animation: clippath 5s infinite linear;
+}
+body .body-content div.ef div::after {
+  -webkit-animation: clippath 5s infinite -2.5s linear;
+          animation: clippath 5s infinite -2.5s linear;
+}
+@-webkit-keyframes clippath {
+  0%, 100% {
+    -webkit-clip-path: inset(0 0 98% 0);
+            clip-path: inset(0 0 98% 0);
+  }
+  25% {
+    -webkit-clip-path: inset(0 98% 0 0);
+            clip-path: inset(0 98% 0 0);
+  }
+  50% {
+    -webkit-clip-path: inset(98% 0 0 0);
+            clip-path: inset(98% 0 0 0);
+  }
+  75% {
+    -webkit-clip-path: inset(0 0 0 98%);
+            clip-path: inset(0 0 0 98%);
+  }
+}
+@keyframes clippath {
+  0%, 100% {
+    -webkit-clip-path: inset(0 0 98% 0);
+            clip-path: inset(0 0 98% 0);
+  }
+  25% {
+    -webkit-clip-path: inset(0 98% 0 0);
+            clip-path: inset(0 98% 0 0);
+  }
+  50% {
+    -webkit-clip-path: inset(98% 0 0 0);
+            clip-path: inset(98% 0 0 0);
+  }
+  75% {
+    -webkit-clip-path: inset(0 0 0 98%);
+            clip-path: inset(0 0 0 98%);
+  }
 }/*# sourceMappingURL=all.css.map */

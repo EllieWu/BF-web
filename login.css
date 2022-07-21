@@ -41,6 +41,69 @@ body .banner .banner-img img {
     display: none;
   }
 }
+body .banner div.ef {
+  --bRadius: 10px;
+}
+body .banner div.ef div {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  border-radius: var(--bRadius);
+  transition: all 0.3s;
+}
+body .banner div.ef div::before, body .banner div.ef div::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: all 0.5s;
+  border-radius: var(--bRadius);
+  -webkit-animation: clippath 5s infinite linear;
+          animation: clippath 5s infinite linear;
+}
+body .banner div.ef div::after {
+  -webkit-animation: clippath 5s infinite -2.5s linear;
+          animation: clippath 5s infinite -2.5s linear;
+}
+@-webkit-keyframes clippath {
+  0%, 100% {
+    -webkit-clip-path: inset(0 0 98% 0);
+            clip-path: inset(0 0 98% 0);
+  }
+  25% {
+    -webkit-clip-path: inset(0 98% 0 0);
+            clip-path: inset(0 98% 0 0);
+  }
+  50% {
+    -webkit-clip-path: inset(98% 0 0 0);
+            clip-path: inset(98% 0 0 0);
+  }
+  75% {
+    -webkit-clip-path: inset(0 0 0 98%);
+            clip-path: inset(0 0 0 98%);
+  }
+}
+@keyframes clippath {
+  0%, 100% {
+    -webkit-clip-path: inset(0 0 98% 0);
+            clip-path: inset(0 0 98% 0);
+  }
+  25% {
+    -webkit-clip-path: inset(0 98% 0 0);
+            clip-path: inset(0 98% 0 0);
+  }
+  50% {
+    -webkit-clip-path: inset(98% 0 0 0);
+            clip-path: inset(98% 0 0 0);
+  }
+  75% {
+    -webkit-clip-path: inset(0 0 0 98%);
+            clip-path: inset(0 0 0 98%);
+  }
+}
 body .body-login-box {
   position: absolute;
   align-items: center;
