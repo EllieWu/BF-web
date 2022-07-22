@@ -19,26 +19,16 @@ body .container .link-c {
     display: none;
   }
 }
-body .banner .m-img img {
-  max-width: 100%;
-  background-color: #ccd1f6;
-}
-@media (min-width: 391px) {
-  body .banner .m-img img {
-    display: none;
-  }
-}
-body .banner .banner-img img {
-  position: relative;
+body .banner {
+  background-image: url("https://digitallearning.arizona.edu/sites/default/files/styles/uaqs_full_width_lg/public/RethinkingYourAssessments.jpg?itok=fYZ_ZKRP&timestamp=1599151705");
   background-size: cover;
-  height: 100%;
-  background-attachment: fixed;
-  max-width: 100%;
-  overflow: hidden;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
-@media (max-width: 391px) {
-  body .banner .banner-img img {
-    display: none;
+@media (max-width: 992px) {
+  body .banner {
+    background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/ai-development-3454695-2918404.png");
+    background-color: #ccd1f6;
   }
 }
 body .banner .ef {
@@ -105,51 +95,37 @@ body .banner .ef .div::after {
   }
 }
 body .body-login-box {
-  position: absolute;
-  align-items: center;
-  top: 205px;
-  margin-left: 393px;
+  display: flex;
 }
 @media (max-width: 1200px) {
   body .body-login-box {
-    top: 113px;
-    justify-content: flex-start;
-    margin-left: 83px;
-  }
-}
-@media (max-width: 992px) {
-  body .body-login-box {
-    top: 99px;
+    justify-content: center;
   }
 }
 body .body-login-box .body-login {
   background-color: rgba(137, 137, 137, 0.5);
   border-radius: 10px;
   text-align: center;
-  padding: 70px 0;
-  width: 313px;
+  padding: 28px 0;
+  width: 1200px;
+  margin-top: 134px;
 }
 @media (max-width: 1200px) {
   body .body-login-box .body-login {
-    padding: 5px 0px;
+    width: 960px;
+    padding: 100px 0px;
   }
 }
 @media (max-width: 992px) {
   body .body-login-box .body-login {
-    padding: 10px 10px;
-    width: 265px;
+    padding: 50px 0px;
+    width: 768px;
+    background-color: rgba(255, 255, 255, 0.95);
   }
 }
 @media (max-width: 768px) {
   body .body-login-box .body-login {
-    width: 215px;
-    padding: 9px 10px;
-  }
-}
-@media (max-width: 391px) {
-  body .body-login-box .body-login {
-    background-color: rgba(255, 255, 255, 0.95);
-    width: 200px;
+    width: 579px;
   }
 }
 @media (max-width: 992px) {
@@ -157,15 +133,46 @@ body .body-login-box .body-login {
     font-size: 16px;
   }
 }
-@media (max-width: 768px) {
-  body .body-login-box .body-login p {
-    font-size: 12px;
-  }
-}
 @media (max-width: 992px) {
   body .body-login-box .body-login a {
     width: 177px;
   }
+}
+body .body-login-box .body-login ::-moz-placeholder {
+  color: white;
+  font-weight: bold;
+}
+body .body-login-box .body-login :-ms-input-placeholder {
+  color: white;
+  font-weight: bold;
+}
+body .body-login-box .body-login ::placeholder {
+  color: white;
+  font-weight: bold;
+}
+@media (max-width: 992px) {
+  body .body-login-box .body-login ::-moz-placeholder {
+    color: black;
+  }
+  body .body-login-box .body-login :-ms-input-placeholder {
+    color: black;
+  }
+  body .body-login-box .body-login ::placeholder {
+    color: black;
+  }
+}
+body .body-login-box .body-login .checkbox-text {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+@media (max-width: 992px) {
+  body .body-login-box .body-login .checkbox-text {
+    color: black;
+  }
+}
+body .body-login-box .body-login .checkbox {
+  margin-right: 8px;
 }
 body .body-login-box .rwd-nav-sign {
   margin-top: 20px;
@@ -204,26 +211,28 @@ body .body-login-box .rwd-nav-sign button:hover {
   }
 }
 body .body-login-box h2 {
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-weight: bold;
+  color: white;
 }
 @media (max-width: 992px) {
   body .body-login-box h2 {
-    font-size: 20px;
+    font-size: 30px;
+    color: black;
   }
 }
 @media (max-width: 768px) {
   body .body-login-box h2 {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 body .body-login-box input {
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 20px;
-  border: 1px solid #79b4a0;
+  border: 1px solid white;
   text-align: center;
   background-color: transparent;
   font-size: 18px;
@@ -236,11 +245,12 @@ body .body-login-box input {
 @media (max-width: 992px) {
   body .body-login-box input {
     margin-bottom: 14px;
+    border: 1px solid #79b4a0;
+    padding: 3px 0;
   }
 }
 @media (max-width: 768px) {
   body .body-login-box input {
-    padding: 3px 0;
     margin-bottom: 0;
     font-size: 12px;
   }
@@ -248,8 +258,19 @@ body .body-login-box input {
 body .body-login-box .login {
   background-color: rgba(137, 137, 137, 0.5);
   width: 216px;
-  background: linear-gradient(to bottom left, #487081, #83c1a6);
+  background-color: rgb(238, 228, 255);
   cursor: pointer;
+  font-weight: bold;
+  color: black;
+  border: 1px solid white;
+}
+@media (max-width: 992px) {
+  body .body-login-box .login {
+    width: 199px;
+    padding: 3px 0;
+    background: linear-gradient(to bottom left, #d3f2ff, #83c1a6);
+    border: 1px solid #79b4a0;
+  }
 }
 @media (max-width: 768px) {
   body .body-login-box .login {
@@ -257,9 +278,6 @@ body .body-login-box .login {
   }
 }
 body .body-login-box .login:hover {
-  background: #365f71;
-  color: white;
-}
-body .checkbox {
-  margin-right: 8px;
+  background: black;
+  color: rgb(238, 228, 255);
 }/*# sourceMappingURL=login.css.map */

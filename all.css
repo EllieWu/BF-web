@@ -176,21 +176,24 @@ body .body-content .body-login-box .body-login h2 {
   margin-bottom: 20px;
 }
 body .body-content .body-login-box .body-login input {
-  padding: 10px;
+  padding: 10px 0px;
   margin-bottom: 20px;
   border-radius: 20px;
   border: 0px solid;
   text-align: center;
+  font-size: 18px;
+}
+body .body-content .body-login-box .body-login .checkbox {
+  font-size: 14px;
 }
 body .body-content .body-login-box .body-login .login {
   background-color: rgba(137, 137, 137, 0.5);
-  width: 189px;
-  background: linear-gradient(to bottom left, #487081, #83c1a6);
+  width: 219px;
+  background: linear-gradient(to bottom left, #e3c24b, #83bbc1);
   cursor: pointer;
 }
 body .body-content .body-login-box .body-login .login:hover {
-  background: #365f71;
-  color: white;
+  background: #ebcc74;
 }
 body .body-content div.ef {
   --bRadius: 10px;
