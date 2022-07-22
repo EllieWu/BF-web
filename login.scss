@@ -18,16 +18,22 @@
         @content;
     }
 }
-@mixin mobile391{
-    @media(max-width: 391px){
+@mixin mobile375{
+    @media(max-width: 375px){
         @content;
     }
 }
-@mixin m391{
-    @media(min-width: 391px){
-        @content;
-    }
-}
+// @mixin mobile391{
+//     @media(max-width: 391px){
+//         @content;
+//     }
+// }
+// @mixin m391{
+//     @media(min-width: 391px){
+//         @content;
+//     }
+// }
+
 @mixin sign-rwd-1200{
     @media(min-width: 1200px){
         @content;
@@ -46,9 +52,9 @@ body{
         margin: 0 auto;
         .nav-img{
             width: 180px;
-            @include mobile391{
-                width: 114px;
-            }
+            // @include mobile391{
+            //     width: 114px;
+            // }
         }
         .link-c {
             color:black !important;
@@ -141,8 +147,10 @@ body{
                 background-color:rgb(255 255 255 / 95%) ;
             }
             @include pad768{
-                width: 579px;
-                
+                width: 579px;  
+            }
+            @include mobile375{
+                width: 266px;
             }
             // @include mobile391{
                 
@@ -198,9 +206,9 @@ body{
                 @include web992{
                     font-size: 8px;
                 }
-                @include mobile391{
-                    color:black;
-                }
+                // @include mobile391{
+                //     color:black;
+                // }
                 &:hover{
                     background: linear-gradient(to bottom left, #487081, #83c1a6);
                  }
@@ -276,8 +284,15 @@ body{
                 }
             }
         }
-        
-    }
+        .dropdown-menu{
+            background: rgb(235 237 255);
+            }
+            .link-c:hover{
+                background: rgb(180, 186, 245);
+                color:white;
+            }
+        }
+    
 
 
 

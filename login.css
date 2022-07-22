@@ -5,11 +5,6 @@ body .container {
 body .container .nav-img {
   width: 180px;
 }
-@media (max-width: 391px) {
-  body .container .nav-img {
-    width: 114px;
-  }
-}
 body .container .link-c {
   color: black !important;
   font-weight: bold !important;
@@ -128,6 +123,11 @@ body .body-login-box .body-login {
     width: 579px;
   }
 }
+@media (max-width: 375px) {
+  body .body-login-box .body-login {
+    width: 266px;
+  }
+}
 @media (max-width: 992px) {
   body .body-login-box .body-login p {
     font-size: 16px;
@@ -195,11 +195,6 @@ body .body-login-box .rwd-nav-sign button {
 @media (max-width: 992px) {
   body .body-login-box .rwd-nav-sign button {
     font-size: 8px;
-  }
-}
-@media (max-width: 391px) {
-  body .body-login-box .rwd-nav-sign button {
-    color: black;
   }
 }
 body .body-login-box .rwd-nav-sign button:hover {
@@ -280,4 +275,11 @@ body .body-login-box .login {
 body .body-login-box .login:hover {
   background: black;
   color: rgb(238, 228, 255);
+}
+body .dropdown-menu {
+  background: rgb(235, 237, 255);
+}
+body .link-c:hover {
+  background: rgb(180, 186, 245);
+  color: white;
 }/*# sourceMappingURL=login.css.map */
