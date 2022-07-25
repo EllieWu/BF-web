@@ -182,13 +182,14 @@ body .body-content .body-login-box .body-login input {
   border: 0px solid;
   text-align: center;
   font-size: 18px;
+  font-weight: bold;
 }
 body .body-content .body-login-box .body-login .checkbox {
   font-size: 14px;
 }
 body .body-content .body-login-box .body-login .login {
   background-color: rgba(137, 137, 137, 0.5);
-  width: 219px;
+  width: 238px;
   background: linear-gradient(to bottom left, #e3c24b, #83bbc1);
   cursor: pointer;
 }

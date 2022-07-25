@@ -113,14 +113,14 @@ body .body-login-box .body-login {
 }
 @media (max-width: 992px) {
   body .body-login-box .body-login {
-    padding: 50px 0px;
+    padding: 90px 0px;
     width: 768px;
     background-color: rgba(255, 255, 255, 0.95);
   }
 }
 @media (max-width: 768px) {
   body .body-login-box .body-login {
-    width: 579px;
+    width: 320px;
   }
 }
 @media (max-width: 375px) {
@@ -220,7 +220,7 @@ body .body-login-box h2 {
 }
 @media (max-width: 768px) {
   body .body-login-box h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 body .body-login-box input {
@@ -232,27 +232,22 @@ body .body-login-box input {
   background-color: transparent;
   font-size: 18px;
 }
-@media (max-width: 1200px) {
-  body .body-login-box input {
-    padding: 0;
-  }
-}
 @media (max-width: 992px) {
   body .body-login-box input {
     margin-bottom: 14px;
     border: 1px solid #79b4a0;
-    padding: 3px 0;
+    padding: 5px 0;
   }
 }
 @media (max-width: 768px) {
   body .body-login-box input {
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 body .body-login-box .login {
   background-color: rgba(137, 137, 137, 0.5);
-  width: 216px;
+  width: 219px;
   background-color: rgb(238, 228, 255);
   cursor: pointer;
   font-weight: bold;
@@ -267,14 +262,9 @@ body .body-login-box .login {
     border: 1px solid #79b4a0;
   }
 }
-@media (max-width: 768px) {
-  body .body-login-box .login {
-    width: 133px;
-  }
-}
 body .body-login-box .login:hover {
-  background: black;
-  color: rgb(238, 228, 255);
+  background: rgb(184, 152, 237);
+  color: black;
 }
 body .dropdown-menu {
   background: rgb(235, 237, 255);

@@ -142,12 +142,12 @@ body{
                 padding: 100px 0px;
             } 
             @include web992{
-                padding: 50px 0px;
+                padding: 90px 0px;
                 width: 768px;
                 background-color:rgb(255 255 255 / 95%) ;
             }
             @include pad768{
-                width: 579px;  
+                width: 320px;  
             }
             @include mobile375{
                 width: 266px;
@@ -232,7 +232,7 @@ body{
                     color:black;
                 }
                 @include pad768{
-                    font-size: 20px;
+                    font-size: 25px;
                 }
             }
             input{
@@ -245,22 +245,22 @@ body{
                 background-color: transparent;
                 font-size: 18px;
                 @include w1200{
-                    padding: 0;
+                    // padding: 0;
                 }
                 @include web992{
                     margin-bottom: 14px;
                     border: 1px solid #79b4a0;
-                    padding: 3px 0;
+                    padding: 5px 0;
                 }
                 @include pad768{
  
                     margin-bottom: 0;
-                    font-size: 12px;
+                    font-size: 18px;
                 }
             }
             .login{
                 background-color: rgb(137 137 137 / 50%);
-                width: 216px;
+                width: 219px;
                 // background: linear-gradient(to bottom left, #e3c24b, #83bbc1);
                 // background: #ebcc74;
                 // background-color: transparent;
@@ -276,11 +276,11 @@ body{
                     border: 1px solid #79b4a0;
                 }
                 @include pad768{
-                    width: 133px;
+                    // width: 133px;
                 }
                 &:hover{
-                    background:black;
-                    color:rgb(238 228 255);;
+                    background:rgb(184 152 237);
+                    color:black;
                 }
             }
         }
